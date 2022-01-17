@@ -16,6 +16,7 @@ public class MemberController {
 //        this.memberService = memberService;
 //    }
 
+    //Constructor Injection
     @Autowired
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
