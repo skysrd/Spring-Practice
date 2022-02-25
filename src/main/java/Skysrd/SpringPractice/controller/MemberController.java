@@ -14,17 +14,7 @@ import java.util.List;
 @Controller
 public class MemberController {
 
-    private  MemberService memberService;
-
-    //Setter Injection
-//    @Autowired
-//    public void setMemberService(MemberService memberService) {
-//        this.memberService = memberService;
-//    }
-
-    //Constructor Injection
-
-//    private final MemberService memberService;
+    private final MemberService memberService;
 
 
     @Autowired
