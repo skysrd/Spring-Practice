@@ -1,6 +1,7 @@
 package Skysrd.SpringPractice;
 
 import Skysrd.SpringPractice.repository.JdbcMemberRepository;
+import Skysrd.SpringPractice.repository.JdbcTemplateMemberRepository;
 import Skysrd.SpringPractice.repository.MemberRepository;
 import Skysrd.SpringPractice.repository.MemoryMemberRepository;
 import Skysrd.SpringPractice.service.MemberService;
@@ -32,6 +33,7 @@ public class SpringConfig {
 
     @Bean
     public MemberRepository memberRepository() {
-        return new JdbcMemberRepository(dataSource);
+//        return new JdbcMemberRepository(dataSource);
+        return new JdbcTemplateMemberRepository(dataSource);
     }
 }
